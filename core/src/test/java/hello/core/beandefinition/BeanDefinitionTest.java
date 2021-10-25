@@ -13,6 +13,7 @@ public class BeanDefinitionTest {
     @Test
     @DisplayName("빈 설정 메타정보 확인")
     void findApplicationBean() {
+
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for (String beanDefinitionName : beanDefinitionNames) {
             BeanDefinition beanDefinition = ac.getBeanDefinition(beanDefinitionName);
